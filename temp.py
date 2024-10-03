@@ -1,10 +1,11 @@
 import os
 from openai import AzureOpenAI
+from dotenv import load_dotenv
 
 # Initialize Azure OpenAI client with key-based authentication
 client = AzureOpenAI(
-    azure_endpoint = "https://dmitr-m1q9cxme-francecentral.openai.azure.com/",
-    api_key = "216c776191104b86a014089dc303d4ac",
+    azure_endpoint = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME"),
+    api_key = os.getenv("AZURE_INFERENCE_CREDENTIAL"),
     api_version = "2024-05-01-preview",
 )
 
