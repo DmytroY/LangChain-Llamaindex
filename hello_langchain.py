@@ -1,4 +1,6 @@
-#from langchain_community.chat_models import ChatOpenAI
+"""
+Basic usage on langchain with localy running LLM model
+"""
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser

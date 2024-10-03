@@ -1,5 +1,10 @@
+python-dotenv
 openai
 langchain
 langchain-openai
 llama-index
 python-dotenv
+llama-index-graph-stores-nebula
+llama-index-llms-azure-openai
+llama-index-embeddings-azure-openai
+llama-index-llms-azure-inference
